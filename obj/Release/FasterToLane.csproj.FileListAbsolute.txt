@@ -1,0 +1,10 @@
+D:\Users\Sterioss\Documents\Visual Studio 2015\Projects\FasterToLane\FasterToLane\bin\Release\FasterToLane.pdb
+D:\Users\Sterioss\Documents\Visual Studio 2015\Projects\FasterToLane\FasterToLane\bin\Release\EloBuddy.dll
+D:\Users\Sterioss\Documents\Visual Studio 2015\Projects\FasterToLane\FasterToLane\bin\Release\EloBuddy.SDK.dll
+D:\Users\Sterioss\Documents\Visual Studio 2015\Projects\FasterToLane\FasterToLane\bin\Release\SharpDX.dll
+D:\Users\Sterioss\Documents\Visual Studio 2015\Projects\FasterToLane\FasterToLane\bin\Release\SharpDX.Direct3D9.dll
+D:\Users\Sterioss\Documents\Visual Studio 2015\Projects\FasterToLane\FasterToLane\bin\Release\Newtonsoft.Json.dll
+D:\Users\Sterioss\Documents\Visual Studio 2015\Projects\FasterToLane\FasterToLane\obj\Release\FasterToLane.pdb
+D:\Users\Sterioss\Documents\Visual Studio 2015\Projects\FasterToLane\FasterToLane\obj\Release\FasterToLane.csprojResolveAssemblyReference.cache
+D:\Users\Sterioss\Documents\Visual Studio 2015\Projects\FasterToLane\FasterToLane\bin\Release\FasterToLane.exe
+D:\Users\Sterioss\Documents\Visual Studio 2015\Projects\FasterToLane\FasterToLane\obj\Release\FasterToLane.exe
