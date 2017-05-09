@@ -27,20 +27,15 @@ namespace FasterToLane
             MenuFTL.AddGroupLabel("Faster To Lane :");
             MenuFTL.Add("AutoMoveFountainMovePos", new CheckBox("Auto Move Best Spot in Fountain"));
             MenuFTL.Add("FountainMovePos", new ComboBox("Player Lane", new[] { "Mid", "Top", "Bot" }, 1));
+            MenuFTL.AddLabel("Select which lane you want to get");
             MenuFTL.Add("MaxLevelMove", new Slider("Stop after level", 9, 6, 19));
             MenuFTL.AddLabel("Set it to 19 to stay active at all time");
             Game.OnUpdate += Game_OnUpdate;
-            FasterToLane();
         }
 
  
 
         private static void Game_OnUpdate(EventArgs args)
-        {
-            FasterToLane();
-        }
-
-        public static void FasterToLane()
         {
             if (ObjectManager.Player.IsInFountainRange() && Core.GameTickCount - FountainMove >= 20000)
             {
