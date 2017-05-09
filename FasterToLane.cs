@@ -23,13 +23,12 @@ namespace FasterToLane
         public static void Loading_OnLoadingComplete(EventArgs args)
         {
              
-             MenuFTL = MainMenu.AddMenu("FasterToLane", "FasterToLane");
+            MenuFTL = MainMenu.AddMenu("FasterToLane", "FasterToLane");
             MenuFTL.AddGroupLabel("Faster To Lane :");
-            if (Game.MapId == GameMapId.SummonersRift)
-            {
-                MenuFTL.Add("AutoMoveFountainMovePos", new CheckBox("Auto Move Best Spot in Fountain"));
-                MenuFTL.Add("FountainMovePos", new ComboBox("Player Lane", new[] { "Mid", "Top", "Bot" }, 1));
-            }
+            MenuFTL.Add("AutoMoveFountainMovePos", new CheckBox("Auto Move Best Spot in Fountain"));
+            MenuFTL.Add("FountainMovePos", new ComboBox("Player Lane", new[] { "Mid", "Top", "Bot" }, 1));
+            MenuFTL.Add("MaxLevelMove", new Slider("Stop after level", 9, 6, 19));
+            MenuFTL.AddLabel("Set it to 19 to stay active at all time");
             Game.OnUpdate += Game_OnUpdate;
             FasterToLane();
         }
@@ -45,7 +44,7 @@ namespace FasterToLane
         {
             if (ObjectManager.Player.IsInFountainRange() && Core.GameTickCount - FountainMove >= 20000)
             {
-                if (MenuFTL["AutoMoveFountainMovePos"].Cast<CheckBox>().CurrentValue)
+                if (MenuFTL["AutoMoveFountainMovePos"].Cast<CheckBox>().CurrentValue && ObjectManager.Player.Level < MenuFTL["MaxLevelMove"].Cast<Slider>().CurrentValue)
                 {
                     if (ObjectManager.Player.Team == GameObjectTeam.Order)
                     {
